@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background: #ccc !important;
+}
+
+:root {
+    --height-menu: 60px;
+}
+
+/*Estilo do menu topo*/
+nav#menukm{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--height-menu);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0px 60px;
+    margin-bottom: 60px;
+}
+
+nav#menukm .logo{
+    width: 250px;
+}
+
+nav#menukm .logo img{
+    width: 80%;
+}
+
+nav#menukm .opcoes{
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav#menukm .opcoes{
+    display: flex;
+    margin: 0;
+}
+
+nav#menukm .opcoes a{
+    font-family: Rubik;
+    color: #0b8b36;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav#menukm .opcoes a:hover{
+    color: #19d157;
+}
+
+nav#menukm .opcoes a{
+    margin: 0 10px;
+}
+
+nav#menukm .opcoes ul a:first-child{
+    margin-left: 0;
+}
+nav#menukm .opcoes ul a:last-child{
+    margin-right: 0;
+}
