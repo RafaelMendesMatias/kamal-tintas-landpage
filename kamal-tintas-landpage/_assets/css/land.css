@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-body {
-    background: #ccc !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 :root {
     --height-menu: 60px;
 }
 
 /*Estilo do menu topo*/
+#ajuste-menu-topo{
+    position: relative;
+    height: var(--height-menu);
+}
+
 nav#menukm{
     width: 100%;
     position: fixed;
@@ -19,7 +24,7 @@ nav#menukm{
     display: flex;
     align-items: center;
     padding: 0px 60px;
-    margin-bottom: 60px;
+    z-index: 999;
 }
 
 nav#menukm .logo{
@@ -54,7 +59,7 @@ nav#menukm .opcoes a:hover{
 }
 
 nav#menukm .opcoes a{
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 nav#menukm .opcoes ul a:first-child{
